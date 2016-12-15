@@ -1,6 +1,6 @@
 {
   "name": "images-upload-middleware",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "express middleware for images upload",
   "main": "lib/index.js",
   "scripts": {
@@ -45,7 +45,7 @@
     "flow-bin": "^0.36.0"
   },
   "homepage": "https://github.com/aleksei0807/images-upload-middleware#readme",
-  "peerDependencies": {
+  "dependencies": {
     "multiparty": "^4.1.2"
   }
 }
