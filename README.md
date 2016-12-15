@@ -4,6 +4,8 @@ Express middleware for images upload
 
 ## Usage
 
+`npm i -S multiparty images-upload-middleware`
+
 ```javascript
 import express from 'express';
 import imagesUpload from 'images-upload-middleware';
