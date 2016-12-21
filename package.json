@@ -1,6 +1,6 @@
 {
   "name": "images-upload-middleware",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "express middleware for images upload",
   "main": "lib/index.js",
   "scripts": {
@@ -46,6 +46,7 @@
   },
   "homepage": "https://github.com/aleksei0807/images-upload-middleware#readme",
   "dependencies": {
+    "md5-file": "^3.1.1",
     "multiparty": "^4.1.2"
   }
 }
