@@ -13,7 +13,7 @@ Express middleware for images upload
 - `savePath: string` - path where you want to save images;
 - `servePath: string` - serve path;
 - `multiple: boolean` - allows to upload a bunch of images;
-- `notRename: boolean` - if false, then do not rename image `default: true`;
+- `rename: boolean` - if false, then do not rename image `default: true`;
 
 ### Examples
 

@@ -39,7 +39,7 @@ export default function imagesUpload(
 	savePath: string,
 	servePath: string,
 	multiple?: boolean,
-	notRename?: boolean
+	rename?: boolean
 ) {
 	const localSavePath = savePath.charAt(savePath.length - 1) === '/'
 	? savePath.slice(0, -1)
@@ -60,7 +60,7 @@ export default function imagesUpload(
 						const respFiles = files.imageFiles.map((file) => {
 							const {path: tempPath, originalFilename} = file;
 							let fileName = originalFilename;
-							if (notRename !== false) {
+							if (rename !== false) {
 								const fileExtNum = fileName.lastIndexOf('.');
 								const fileExt = fileExtNum < 0 ? '' : fileName.substr(fileExtNum);
 								fileName = `${md5File.sync(tempPath)}${fileExt}`;
@@ -87,7 +87,7 @@ export default function imagesUpload(
 					const {path: tempPath, originalFilename} = files.imageFiles[0];
 
 					let fileName = originalFilename;
-					if (notRename !== false) {
+					if (rename !== false) {
 						const fileExtNum = fileName.lastIndexOf('.');
 						const fileExt = fileExtNum < 0 ? '' : fileName.substr(fileExtNum);
 						fileName = `${md5File.sync(tempPath)}${fileExt}`;
